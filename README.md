@@ -37,6 +37,6 @@ If you're using `express-graphql`, it works exactly the same way:
 ```diff
 app.use('/graphql', graphqlHTTP({
   schema: MyGraphQLSchema,
-  validationRules: [NoIntrospection]
++ validationRules: [NoIntrospection]
 }));
 ```
