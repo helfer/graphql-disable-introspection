@@ -1,15 +1,36 @@
 # graphql-disable-introspection
-Disable introspection queries in GraphQL with a simple validation rule.
+Disable introspection queries in GraphQL with a simple validation rule. Queries that contain `__schema` or `__type` will fail validation with this rule. For example, the following queries will be rejected:
+
+```graphql
+query {
+  __schema {
+    queryType {
+      name
+    }
+  }
+}
+
+query {
+  __type(name: "Query") {
+    description
+    fields {
+      name
+    }
+  }
+}
+```
 
 ## Usage
 
-Install the package from npm
+The package can be installed from npm
 
 ```sh
 npm install -save graphql-disable-introspection
 ```
 
-Then import it and pass it to `graphql-server-<express/koa/hapi/lambda/micro/...>` as an additional validation rule:
+It exports a single validation rule which you can pass to your node GraphQL server with the `validationRules` argument. 
+
+Here's an example for `graphql-server-express`:
 
 ```diff
 import express from 'express';
