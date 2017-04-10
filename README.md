@@ -1,5 +1,5 @@
 # graphql-disable-introspection
-Disable Introspection in GraphQL-JS with a simple validation rule
+Disable introspection queries in GraphQL with a simple validation rule.
 
 ## Usage
 
