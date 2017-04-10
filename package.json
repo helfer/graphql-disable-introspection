@@ -1,0 +1,42 @@
+{
+  "name": "graphql-disable-introspection",
+  "version": "1.0.0",
+  "description": "Disable introspection in graphql-js with a validation rule",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helfer/graphql-disable-introspection.git"
+  },
+  "keywords": [
+    "GraphQL",
+    "Introspection",
+    "Node",
+    "disable",
+    "query",
+    "validation",
+    "rule"
+  ],
+  "author": "Jonas Helfer <jonas@helfer.email>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/helfer/graphql-disable-introspection/issues"
+  },
+  "homepage": "https://github.com/helfer/graphql-disable-introspection#readme",
+  "dependencies": {
+    "graphql": "^0.9.2"
+  },
+  "peerDependencies": {
+    "graphql": "^0.9.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
