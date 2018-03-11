@@ -1,6 +1,6 @@
 {
   "name": "graphql-disable-introspection",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Disable introspection in graphql-js with a validation rule",
   "main": "index.js",
   "directories": {
@@ -33,7 +33,7 @@
     "graphql": "^0.9.2"
   },
   "peerDependencies": {
-    "graphql": "^0.9.2"
+    "graphql": "^0.9.2 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0"
   },
   "devDependencies": {
     "body-parser": "^1.17.1",
