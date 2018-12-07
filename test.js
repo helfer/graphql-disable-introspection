@@ -13,7 +13,7 @@ var schema = new graphql.GraphQLSchema({
       hello: {
         type: graphql.GraphQLString,
         resolve() {
-          return 'world';
+          return Promise.resolve('world');
         }
       }
     }
