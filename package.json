@@ -3,6 +3,7 @@
   "version": "1.2.0",
   "description": "Disable introspection in graphql-js with a validation rule",
   "main": "index.js",
+  "types": "index.d.ts",
   "directories": {
     "doc": "docs",
     "test": "tests"
